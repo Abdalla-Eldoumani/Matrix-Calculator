@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Multiplication - Matrix Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/8_matrix_multiplication/matrix_multiplication.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Matrix Operations</h3>
+        <ul>
+            <li><a href="/1_Gauss_Jordan_Elimintaion/gauss_jordan_elimination.html">Gauss-Jordan Elimination</a></li>
+            <li><a href="/2_Cramers_Rule/cramers_rule.html">Cramer's Rule</a></li>
+            <li><a href="/3_inverse_matrix/inverse_matrix.html">Inverse Matrix</a></li>
+            <li><a href="/4_matrix_rank/matrix_rank.html">Matrix Rank</a></li>
+            <li><a href="/5_determiant/determinant.html">Determinant</a></li>
+            <li><a href="/6_matrix_power/matrix_power.html">Matrix Power</a></li>
+            <li><a href="/7_matrix_transpose/matrix_transpose.html">Matrix Transpose</a></li>
+            <li><a href="/8_matrix_multiplication/matrix_multiplication.html">Matrix Multiplication</a></li>
+            <li><a href="/9_matrix_addition_subtraction/matrix_addition_subtraction.html">Matrix Addition/Subtraction</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h3>Matrix A</h3>
+        <label for="rowsA">Rows:</label>
+        <input type="number" id="rowsA" min="1" value="3">
+        <label for="colsA">Columns:</label>
+        <input type="number" id="colsA" min="1" value="3">
+        <h3>Matrix B</h3>
+        <label for="rowsB">Rows:</label>
+        <input type="number" id="rowsB" min="1" value="3">
+        <label for="colsB">Columns:</label>
+        <input type="number" id="colsB" min="1" value="3">
+        <button type="button" onclick="createMatrixInputs()">Set Matrices</button>
+        <h3>Matrix A</h3>
+        <form id="matrix-formA"></form>
+        <h3>Matrix B</h3>
+        <form id="matrix-formB"></form>
+        <br>
+        <button type="button" onclick="calculateMultiplication()">Calculate</button>
+        <br>
+        <h3>Result</h3>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

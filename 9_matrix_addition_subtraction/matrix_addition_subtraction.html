@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Addition/Subtraction - Matrix Calculator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/9_matrix_addition_subtraction/matrix_addition_subtraction.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Matrix Operations</h3>
+        <ul>
+            <li><a href="/1_Gauss_Jordan_Elimintaion/gauss_jordan_elimination.html">Gauss-Jordan Elimination</a></li>
+            <li><a href="/2_Cramers_Rule/cramers_rule.html">Cramer's Rule</a></li>
+            <li><a href="/3_inverse_matrix/inverse_matrix.html">Inverse Matrix</a></li>
+            <li><a href="/4_matrix_rank/matrix_rank.html">Matrix Rank</a></li>
+            <li><a href="/5_determiant/determinant.html">Determinant</a></li>
+            <li><a href="/6_matrix_power/matrix_power.html">Matrix Power</a></li>
+            <li><a href="/7_matrix_transpose/matrix_transpose.html">Matrix Transpose</a></li>
+            <li><a href="/8_matrix_multiplication/matrix_multiplication.html">Matrix Multiplication</a></li>
+            <li><a href="/9_matrix_addition_subtraction/matrix_addition_subtraction.html">Matrix Addition/Subtraction</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2>Matrix Addition/Subtraction</h2>
+        <label for="rows">Rows:</label>
+        <input type="number" id="rows" min="1" value="1">
+        <label for="cols">Columns:</label>
+        <input type="number" id="cols" min="1" value="1">
+        <button type="button" onclick="createMatrixInputs()">Set</button>
+        <br>
+        <h3>Matrix A</h3>
+        <form id="matrix-formA"></form>
+        <h3>Matrix B</h3>
+        <form id="matrix-formB"></form>
+        <br>
+        <label for="operation">Operation:</label>
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+        </select>
+        <br>
+        <button type="button" onclick="calculateAdditionSubtraction()">Calculate</button>
+        <br>
+        <h3>Result</h3>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
