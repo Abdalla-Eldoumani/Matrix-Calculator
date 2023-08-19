@@ -144,3 +144,45 @@ button:hover {
     border: 1px solid #ddd;
     background-color: #ece2e2;
 }
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* Adjustments for the sidebar */
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Adjustments for main content area */
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+        margin-top: 20px; /* adjust margin for the now static sidebar on top */
+    }
+
+    /* Adjusting matrix elements for better spacing */
+    .matrix-element, .matrix-cell {
+        margin: 3px;
+    }
+
+    /* Font size adjustments */
+    .sidebar h3, .main-content h2, .main-content p {
+        font-size: 16px;
+    }
+
+    /* Button size adjustments */
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Adjustments for matrix forms */
+    #matrix-formA, #matrix-formB {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
