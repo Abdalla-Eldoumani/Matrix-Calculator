@@ -1,11 +1,11 @@
 Matrix Calculator Project Documentation:
 
 Table of Contents{
-    Introduction
-    Features
-    Project Structure
-    Design and Styling
-    Responsiveness
+    Introduction,
+    Features,
+    Project Structure,
+    Design and Styling,
+    Responsiveness,
     Future Improvements
 }
 
