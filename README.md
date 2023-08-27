@@ -5,7 +5,7 @@ Table of Contents{
     Features,
     Project Structure,
     Design and Styling,
-    Responsiveness,
+    Responsiveness, and
     Future Improvements
 }
 
